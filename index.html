@@ -1,36 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QR Code Generator — Free Online QR Code Maker | Tabutility</title>
-    <meta name="description" content="Free QR code generator. Generate QR codes from text or URLs instantly. Download as PNG for print, web, or mobile — perfect for marketing and tracking. No sign-up." />
-    <meta name="keywords" content="qr code generator, generate qr code, qr code maker, free qr code generator, qr code creator, url to qr code" />
-    <link rel="canonical" href="https://qr-code-generator.tabutility.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://qr-code-generator.tabutility.com/" />
-    <meta property="og:title" content="QR Code Generator — Free Online QR Code Maker" />
-    <meta property="og:description" content="Generate QR codes from text or URLs instantly. Download as PNG. Free, no sign-up." />
-    <meta property="og:site_name" content="Tabutility" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="QR Code Generator — Free Online QR Code Maker" />
-    <meta name="twitter:description" content="Generate QR codes from text or URLs instantly. Free, no sign-up." />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📲</text></svg>" />
-    <meta name="robots" content="index, follow" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-78VZWJ5B1W');
-    </script>
-    <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "WebApplication", "name": "QR Code Generator", "url": "https://qr-code-generator.tabutility.com", "description": "Free online QR code generator. Generate QR codes from text or URLs instantly.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }, "provider": { "@type": "Organization", "name": "Tabutility", "url": "https://tabutility.com" } }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>QR Code Generator — Tabutility</title>
+<meta name="description" content="Free QR code generator. Create QR codes for URLs, text, email and phone numbers. Download as PNG."/>
+<meta name="keywords" content="qr code generator, create qr code, free qr code, qr code maker, generate qr code online"/>
+<link rel="canonical" href="https://qr-code-generator.tabutility.com/"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬛</text></svg>"/>
+<meta property="og:title" content="QR Code Generator"/>
+<meta property="og:description" content="Free QR code generator. Create QR codes for URLs, text, email and phone. Download as PNG."/>
+<meta property="og:url" content="https://qr-code-generator.tabutility.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Tabutility"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="QR Code Generator"/>
+<meta name="twitter:description" content="Free QR code generator. Create QR codes for URLs, text, email and phone. Download as PNG."/>
+<meta name="robots" content="index, follow"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-78VZWJ5B1W');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"QR Code Generator","url":"https://qr-code-generator.tabutility.com/","description":"Free QR code generator. Create QR codes for URLs, text, email and phone numbers. Download as PNG.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tabutility","item":"https://tabutility.com"},{"@type":"ListItem","position":2,"name":"Developer Tools","item":"https://tabutility.com"},{"@type":"ListItem","position":3,"name":"QR Code Generator","item":"https://qr-code-generator.tabutility.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are my QR codes saved?","acceptedAnswer":{"@type":"Answer","text":"No — QR codes are generated client-side. Nothing is stored on any server."}},{"@type":"Question","name":"Can I download the QR code?","acceptedAnswer":{"@type":"Answer","text":"Yes — click Download PNG to save the QR code as an image."}},{"@type":"Question","name":"Is the QR Code Generator free?","acceptedAnswer":{"@type":"Answer","text":"Yes — completely free, no sign-up needed."}},{"@type":"Question","name":"What can I encode?","acceptedAnswer":{"@type":"Answer","text":"URLs, plain text, email addresses and phone numbers."}}]}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh}
+nav{background:#1e293b;border-bottom:1px solid #334155;padding:14px 24px;display:flex;align-items:center;gap:16px}
+nav a{color:#94a3b8;text-decoration:none;font-size:14px}nav a:hover{color:#f1f5f9}
+nav .brand{color:#38bdf8;font-weight:700;font-size:18px}
+.ad-banner{background:#1e293b;border-bottom:1px solid #334155;padding:4px;text-align:center}
+#app{max-width:700px;margin:8px auto;padding:0 16px 40px}
+h1{font-size:clamp(20px,4vw,28px);font-weight:800;margin:24px 0 6px;color:#f1f5f9}
+.subtitle{color:#94a3b8;font-size:14px;margin-bottom:20px}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:24px;margin-bottom:20px}
+.type-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.type-tab{background:#0f172a;border:1px solid #334155;border-radius:8px;color:#94a3b8;padding:7px 16px;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s}
+.type-tab.active{background:#38bdf8;border-color:#38bdf8;color:#0f172a}
+label{font-size:13px;color:#94a3b8;display:block;margin-bottom:6px}
+input[type=text],input[type=email],input[type=tel],textarea{width:100%;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#f1f5f9;padding:10px 14px;font-size:14px;outline:none;margin-bottom:14px}
+input:focus,textarea:focus{border-color:#38bdf8}
+textarea{height:80px;resize:vertical;font-family:inherit}
+.size-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.size-btn{background:#0f172a;border:1px solid #334155;border-radius:8px;color:#94a3b8;padding:6px 14px;font-size:13px;cursor:pointer;transition:all .2s}
+.size-btn.active{background:#334155;color:#f1f5f9;border-color:#475569}
+.btn{display:inline-flex;align-items:center;gap:8px;background:#38bdf8;color:#0f172a;border:none;border-radius:8px;padding:10px 22px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s}
+.btn:hover{background:#7dd3fc}
+.btn-outline{background:transparent;border:1px solid #334155;color:#f1f5f9}
+.btn-outline:hover{background:#334155}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.qr-display{text-align:center;margin-top:20px}
+.qr-display img{border-radius:10px;background:#fff;padding:16px;max-width:100%}
+.qr-placeholder{width:300px;height:300px;background:#0f172a;border:2px dashed #334155;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#475569;font-size:14px;margin:0 auto}
+.section-title{font-size:13px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px}
+</style>
+</head>
+<body>
+<nav><span class="brand">⚡ Tabutility</span><a href="https://tabutility.com">← All Tools</a></nav>
+<div class="ad-banner"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<div id="app">
+  <h1>⬛ QR Code Generator</h1>
+  <p class="subtitle">Create QR codes for URLs, text, email or phone. Download as PNG — free and instant.</p>
+
+  <div class="card">
+    <div class="section-title">Content Type</div>
+    <div class="type-tabs">
+      <button class="type-tab active" onclick="setType('url',this)">🔗 URL</button>
+      <button class="type-tab" onclick="setType('text',this)">📝 Text</button>
+      <button class="type-tab" onclick="setType('email',this)">📧 Email</button>
+      <button class="type-tab" onclick="setType('phone',this)">📞 Phone</button>
+    </div>
+
+    <div id="urlFields">
+      <label>URL</label>
+      <input type="text" id="urlInput" placeholder="https://example.com" oninput="autoGen()"/>
+    </div>
+    <div id="textFields" style="display:none">
+      <label>Text</label>
+      <textarea id="textInput" placeholder="Enter any text..." oninput="autoGen()"></textarea>
+    </div>
+    <div id="emailFields" style="display:none">
+      <label>Email Address</label>
+      <input type="email" id="emailInput" placeholder="hello@example.com" oninput="autoGen()"/>
+      <label>Subject (optional)</label>
+      <input type="text" id="emailSubject" placeholder="Subject line..." oninput="autoGen()"/>
+      <label>Body (optional)</label>
+      <textarea id="emailBody" placeholder="Message body..." oninput="autoGen()"></textarea>
+    </div>
+    <div id="phoneFields" style="display:none">
+      <label>Phone Number</label>
+      <input type="tel" id="phoneInput" placeholder="+1 555 000 0000" oninput="autoGen()"/>
+    </div>
+
+    <div class="section-title" style="margin-top:4px">QR Code Size</div>
+    <div class="size-row">
+      <button class="size-btn active" onclick="setSize(200,this)">200px</button>
+      <button class="size-btn" onclick="setSize(300,this)">300px</button>
+      <button class="size-btn" onclick="setSize(400,this)">400px</button>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn" onclick="generate()">⬛ Generate QR Code</button>
+      <button class="btn btn-outline" id="downloadBtn" onclick="downloadQR()" style="display:none">⬇ Download PNG</button>
+    </div>
+  </div>
+
+  <div class="qr-display">
+    <div class="qr-placeholder" id="qrPlaceholder">QR code will appear here</div>
+    <img id="qrImg" style="display:none" alt="QR Code"/>
+  </div>
+</div>
+
+<div style="max-width:700px;margin-left:auto;margin-right:auto;margin-top:24px;margin-bottom:8px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px">Related Tools</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
+      <a href="https://url-encoder.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">URL Encoder / Decoder</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+      <a href="https://uuid-generator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">UUID Generator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+      <a href="https://password-generator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Password Generator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+      <a href="https://base64-encoder.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Base64 Encoder / Decoder</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:700px;margin-left:auto;margin-right:auto;margin-top:8px;margin-bottom:24px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Frequently Asked Questions</h2>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Are my QR codes saved?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">No — QR codes are generated via Google Charts API and nothing is stored on our servers.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Can I download the QR code?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — click Download PNG to save the QR code as a high-quality image.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Is this free?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — completely free, no sign-up needed.</div>
+    </div>
+    <div style="padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">What can I encode?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">URLs, plain text, email addresses (with subject and body) and phone numbers.</div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:8px">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+<script>
+let qrType='url';
+let qrSize=200;
+let autoTimer=null;
+
+function setType(t,el){
+  qrType=t;
+  document.querySelectorAll('.type-tab').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  ['url','text','email','phone'].forEach(id=>{
+    document.getElementById(id+'Fields').style.display=id===t?'block':'none';
+  });
+}
+
+function setSize(s,el){
+  qrSize=s;
+  document.querySelectorAll('.size-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+}
+
+function getContent(){
+  switch(qrType){
+    case 'url': return document.getElementById('urlInput').value.trim()||'';
+    case 'text': return document.getElementById('textInput').value.trim()||'';
+    case 'email':{
+      const e=document.getElementById('emailInput').value.trim();
+      const s=document.getElementById('emailSubject').value.trim();
+      const b=document.getElementById('emailBody').value.trim();
+      if(!e) return '';
+      let mailto='mailto:'+e;
+      const params=[];
+      if(s) params.push('subject='+encodeURIComponent(s));
+      if(b) params.push('body='+encodeURIComponent(b));
+      if(params.length) mailto+='?'+params.join('&');
+      return mailto;
+    }
+    case 'phone': return 'tel:'+document.getElementById('phoneInput').value.trim();
+  }
+  return '';
+}
+
+function autoGen(){
+  clearTimeout(autoTimer);
+  autoTimer=setTimeout(generate,600);
+}
+
+function generate(){
+  const content=getContent();
+  if(!content){return;}
+  const url='https://chart.googleapis.com/chart?chs='+qrSize+'x'+qrSize+'&cht=qr&chl='+encodeURIComponent(content)+'&choe=UTF-8&chld=M|1';
+  const img=document.getElementById('qrImg');
+  img.onload=function(){
+    document.getElementById('qrPlaceholder').style.display='none';
+    img.style.display='inline-block';
+    img.style.width=qrSize+'px';
+    img.style.height=qrSize+'px';
+    document.getElementById('downloadBtn').style.display='inline-flex';
+  };
+  img.onerror=function(){
+    document.getElementById('qrPlaceholder').style.display='flex';
+    document.getElementById('qrPlaceholder').textContent='Failed to generate QR code. Check your connection.';
+    img.style.display='none';
+  };
+  img.src=url;
+}
+
+function downloadQR(){
+  const img=document.getElementById('qrImg');
+  if(!img.src||img.style.display==='none') return;
+  const canvas=document.createElement('canvas');
+  canvas.width=qrSize;canvas.height=qrSize;
+  const ctx=canvas.getContext('2d');
+  const tempImg=new Image();
+  tempImg.crossOrigin='anonymous';
+  tempImg.onload=function(){
+    ctx.fillStyle='#ffffff';
+    ctx.fillRect(0,0,qrSize,qrSize);
+    ctx.drawImage(tempImg,0,0,qrSize,qrSize);
+    const a=document.createElement('a');
+    a.href=canvas.toDataURL('image/png');
+    a.download='qrcode.png';
+    a.click();
+  };
+  tempImg.src=img.src;
+}
+</script>
+</body>
 </html>
